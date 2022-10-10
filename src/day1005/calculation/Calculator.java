@@ -8,7 +8,7 @@ public class Calculator {
         this.a = a;
         this.b = b;
     }
-    public int add() {
+    public int plus() {
         return a+b;
     }
     public void minus() {

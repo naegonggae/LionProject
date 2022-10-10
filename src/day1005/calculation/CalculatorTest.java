@@ -5,7 +5,7 @@ import day1005.calculation.Calculator;
 public class CalculatorTest {
     public static void main(String[] args) {
         Calculator calculator = new Calculator(10, 5);
-        int result = calculator.add();
+        int result = calculator.plus();
         System.out.println(result);
         calculator.minus();
         calculator.multiple();
