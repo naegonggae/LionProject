@@ -4,6 +4,6 @@ public class RandomNumberCreator implements NumberCreator {
     @Override
     public int create(int num) {
 
-        return (int) (Math.random()*9);
+         return (int) (Math.random()*9);
     }
 }
