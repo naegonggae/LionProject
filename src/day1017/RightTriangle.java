@@ -3,16 +3,20 @@ package day1017;
 import java.util.Scanner;
 
 public class RightTriangle {
-    int num;
-    public RightTriangle(int num) {
-        this.num = num;
+    private String star = "*";
+
+    public RightTriangle() {
     }
 
-    public void getRightTriangle() {
+    public RightTriangle(String star) {
+        this.star = star;
+    }
+
+    public void getRightTriangle(int num) {
 
         for (int i = 0 ; i <= num ; i++) {
             for (int j = 0 ; j<i ; j++) {
-                System.out.print("*");
+                System.out.print(star);
 
             }
             System.out.println();
@@ -24,8 +28,8 @@ public class RightTriangle {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
 
-        RightTriangle rightTriangle = new RightTriangle(num);
-        rightTriangle.getRightTriangle();
+        RightTriangle rightTriangle = new RightTriangle("#");
+        rightTriangle.getRightTriangle(num);
 
     }
 }
